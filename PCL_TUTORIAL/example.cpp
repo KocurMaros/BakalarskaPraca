@@ -1,38 +1,29 @@
-#include <ros/ros.h>
-// PCL specific includes
-#include <sensor_msgs/PointCloud2.h>
-#include <pcl_conversions/pcl_conversions.h>
-#include <pcl/point_cloud.h>
+#include <iostream>
+#include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
-
-ros::Publisher pub;
-
-void 
-cloud_cb (const sensor_msgs::PointCloud2ConstPtr& input)
+ 
+int main ()
 {
-  // Create a container for the data.
-  sensor_msgs::PointCloud2 output;
+  pcl::PointCloud<pcl::PointXYZ> cloud;
 
-  // Do data processing here...
-  output = *input;
+  // Fill in the cloud data
+  cloud.width    = 5;
+  cloud.height   = 1;
+  cloud.is_dense = false;
+  cloud.resize (cloud.width * cloud.height);
 
-  // Publish the data.
-  pub.publish (output);
-}
+  for (auto& point: cloud)
+  {
+    point.x = 1024 * rand () / (RAND_MAX + 1.0f);
+    point.y = 1024 * rand () / (RAND_MAX + 1.0f);
+    point.z = 1024 * rand () / (RAND_MAX + 1.0f);
+  }
 
-int
-main (int argc, char** argv)
-{
-  // Initialize ROS
-  ros::init (argc, argv, "my_pcl_tutorial");
-  ros::NodeHandle nh;
+  pcl::io::savePCDFileASCII ("test_pcd.pcd", cloud);
+  std::cerr << "Saved " << cloud.size () << " data points to test_pcd.pcd." << std::endl;
 
-  // Create a ROS subscriber for the input point cloud
-  ros::Subscriber sub = nh.subscribe ("input", 1, cloud_cb);
+  for (const auto& point: cloud)
+    std::cerr << "    " << point.x << " " << point.y << " " << point.z << std::endl;
 
-  // Create a ROS publisher for the output point cloud
-  pub = nh.advertise<sensor_msgs::PointCloud2> ("output", 1);
-
-  // Spin
-  ros::spin ();
+  return (0);
 }
