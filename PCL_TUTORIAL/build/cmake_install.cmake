@@ -1,4 +1,4 @@
-# Install script for directory: /home/laptop/school/PCL_TUTORIAL
+# Install script for directory: /home/laptop/school/BK/PCL_TUTORIAL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/laptop/school/PCL_TUTORIAL/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/laptop/school/BK/PCL_TUTORIAL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
