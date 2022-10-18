@@ -144,8 +144,86 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /usr/include/pcl-1.12/pcl/io/pcd_io.h /usr/include/pcl-1.12/pcl/memory.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/pcl-1.12/pcl/console/parse.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
+ /usr/include/pcl-1.12/pcl/pcl_macros.h /usr/include/c++/11/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/pcl-1.12/pcl/pcl_config.h \
+ /usr/include/boost/preprocessor/arithmetic/add.hpp \
+ /usr/include/boost/preprocessor/arithmetic/dec.hpp \
+ /usr/include/boost/preprocessor/config/config.hpp \
+ /usr/include/boost/preprocessor/arithmetic/inc.hpp \
+ /usr/include/boost/preprocessor/control/while.hpp \
+ /usr/include/boost/preprocessor/cat.hpp \
+ /usr/include/boost/preprocessor/debug/error.hpp \
+ /usr/include/boost/preprocessor/detail/auto_rec.hpp \
+ /usr/include/boost/preprocessor/control/iif.hpp \
+ /usr/include/boost/preprocessor/list/fold_left.hpp \
+ /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
+ /usr/include/boost/preprocessor/control/expr_iif.hpp \
+ /usr/include/boost/preprocessor/list/adt.hpp \
+ /usr/include/boost/preprocessor/detail/is_binary.hpp \
+ /usr/include/boost/preprocessor/detail/check.hpp \
+ /usr/include/boost/preprocessor/logical/compl.hpp \
+ /usr/include/boost/preprocessor/tuple/eat.hpp \
+ /usr/include/boost/preprocessor/list/fold_right.hpp \
+ /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
+ /usr/include/boost/preprocessor/list/reverse.hpp \
+ /usr/include/boost/preprocessor/logical/bitand.hpp \
+ /usr/include/boost/preprocessor/control/detail/while.hpp \
+ /usr/include/boost/preprocessor/logical/bool.hpp \
+ /usr/include/boost/preprocessor/tuple/elem.hpp \
+ /usr/include/boost/preprocessor/facilities/expand.hpp \
+ /usr/include/boost/preprocessor/facilities/overload.hpp \
+ /usr/include/boost/preprocessor/variadic/size.hpp \
+ /usr/include/boost/preprocessor/tuple/rem.hpp \
+ /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
+ /usr/include/boost/preprocessor/variadic/elem.hpp \
+ /usr/include/boost/preprocessor/comparison/equal.hpp \
+ /usr/include/boost/preprocessor/comparison/not_equal.hpp \
+ /usr/include/boost/preprocessor/comparison/less.hpp \
+ /usr/include/boost/preprocessor/comparison/less_equal.hpp \
+ /usr/include/boost/preprocessor/arithmetic/sub.hpp \
+ /usr/include/boost/preprocessor/logical/not.hpp \
+ /usr/include/boost/preprocessor/control/if.hpp \
+ /usr/include/boost/preprocessor/stringize.hpp \
+ /usr/include/pcl-1.12/pcl/filters/extract_indices.h \
+ /usr/include/pcl-1.12/pcl/filters/filter_indices.h \
+ /usr/include/pcl-1.12/pcl/filters/filter.h \
+ /usr/include/pcl-1.12/pcl/pcl_base.h /usr/include/pcl-1.12/pcl/memory.h \
  /usr/include/pcl-1.12/pcl/type_traits.h \
  /usr/include/pcl-1.12/pcl/point_struct_traits.h \
  /usr/include/boost/mpl/assert.hpp /usr/include/boost/mpl/not.hpp \
@@ -191,8 +269,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/mpl/int.hpp /usr/include/boost/mpl/int_fwd.hpp \
  /usr/include/boost/mpl/aux_/integral_wrapper.hpp \
  /usr/include/boost/mpl/aux_/static_cast.hpp \
- /usr/include/boost/preprocessor/cat.hpp \
- /usr/include/boost/preprocessor/config/config.hpp \
  /usr/include/boost/mpl/aux_/lambda_arity_param.hpp \
  /usr/include/boost/mpl/aux_/template_arity_fwd.hpp \
  /usr/include/boost/mpl/aux_/arity.hpp \
@@ -201,48 +277,18 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/mpl/aux_/config/preprocessor.hpp \
  /usr/include/boost/preprocessor/comma_if.hpp \
  /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
- /usr/include/boost/preprocessor/control/if.hpp \
- /usr/include/boost/preprocessor/control/iif.hpp \
- /usr/include/boost/preprocessor/logical/bool.hpp \
  /usr/include/boost/preprocessor/facilities/empty.hpp \
  /usr/include/boost/preprocessor/punctuation/comma.hpp \
  /usr/include/boost/preprocessor/repeat.hpp \
  /usr/include/boost/preprocessor/repetition/repeat.hpp \
- /usr/include/boost/preprocessor/debug/error.hpp \
- /usr/include/boost/preprocessor/detail/auto_rec.hpp \
- /usr/include/boost/preprocessor/tuple/eat.hpp \
  /usr/include/boost/preprocessor/inc.hpp \
- /usr/include/boost/preprocessor/arithmetic/inc.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/enum.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp \
  /usr/include/boost/mpl/limits/arity.hpp \
  /usr/include/boost/preprocessor/logical/and.hpp \
- /usr/include/boost/preprocessor/logical/bitand.hpp \
  /usr/include/boost/preprocessor/identity.hpp \
  /usr/include/boost/preprocessor/facilities/identity.hpp \
  /usr/include/boost/preprocessor/empty.hpp \
- /usr/include/boost/preprocessor/arithmetic/add.hpp \
- /usr/include/boost/preprocessor/arithmetic/dec.hpp \
- /usr/include/boost/preprocessor/control/while.hpp \
- /usr/include/boost/preprocessor/list/fold_left.hpp \
- /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
- /usr/include/boost/preprocessor/control/expr_iif.hpp \
- /usr/include/boost/preprocessor/list/adt.hpp \
- /usr/include/boost/preprocessor/detail/is_binary.hpp \
- /usr/include/boost/preprocessor/detail/check.hpp \
- /usr/include/boost/preprocessor/logical/compl.hpp \
- /usr/include/boost/preprocessor/list/fold_right.hpp \
- /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
- /usr/include/boost/preprocessor/list/reverse.hpp \
- /usr/include/boost/preprocessor/control/detail/while.hpp \
- /usr/include/boost/preprocessor/tuple/elem.hpp \
- /usr/include/boost/preprocessor/facilities/expand.hpp \
- /usr/include/boost/preprocessor/facilities/overload.hpp \
- /usr/include/boost/preprocessor/variadic/size.hpp \
- /usr/include/boost/preprocessor/tuple/rem.hpp \
- /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
- /usr/include/boost/preprocessor/variadic/elem.hpp \
- /usr/include/boost/preprocessor/arithmetic/sub.hpp \
  /usr/include/boost/mpl/aux_/config/eti.hpp \
  /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
  /usr/include/boost/mpl/aux_/lambda_support.hpp \
@@ -254,7 +300,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/mpl/aux_/config/pp_counter.hpp \
  /usr/include/boost/mpl/identity.hpp /usr/include/boost/mpl/vector.hpp \
  /usr/include/boost/mpl/limits/vector.hpp \
- /usr/include/boost/preprocessor/stringize.hpp \
  /usr/include/boost/mpl/vector/vector20.hpp \
  /usr/include/boost/mpl/vector/vector10.hpp \
  /usr/include/boost/mpl/vector/vector0.hpp \
@@ -335,11 +380,7 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp \
  /usr/include/boost/preprocessor/seq/enum.hpp \
  /usr/include/boost/preprocessor/seq/size.hpp \
- /usr/include/c++/11/functional /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/hashtable.h \
@@ -347,11 +388,7 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
@@ -359,36 +396,12 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
- /usr/include/c++/11/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
- /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/complex \
- /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
@@ -532,7 +545,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/unique_ptr.h \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
@@ -540,13 +552,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/pcl-1.12/pcl/pcl_macros.h \
- /usr/include/pcl-1.12/pcl/pcl_config.h \
- /usr/include/boost/preprocessor/comparison/equal.hpp \
- /usr/include/boost/preprocessor/comparison/not_equal.hpp \
- /usr/include/boost/preprocessor/comparison/less.hpp \
- /usr/include/boost/preprocessor/comparison/less_equal.hpp \
- /usr/include/boost/preprocessor/logical/not.hpp \
  /usr/include/pcl-1.12/pcl/point_cloud.h \
  /usr/include/eigen3/Eigen/StdVector /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
@@ -598,9 +603,7 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/pcl-1.12/pcl/types.h \
  /usr/include/pcl-1.12/pcl/console/print.h \
  /usr/include/pcl-1.12/pcl/pcl_exports.h \
- /usr/include/pcl-1.12/pcl/io/file_io.h \
- /usr/include/pcl-1.12/pcl/conversions.h \
- /usr/include/pcl-1.12/pcl/PCLPointField.h \
+ /usr/include/pcl-1.12/pcl/PointIndices.h \
  /usr/include/pcl-1.12/pcl/PCLPointCloud2.h \
  /usr/include/boost/predef/other/endian.h \
  /usr/include/boost/predef/version_number.h \
@@ -616,6 +619,20 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/predef/os/bsd/open.h \
  /usr/include/boost/predef/os/bsd/net.h \
  /usr/include/boost/predef/platform/android.h \
+ /usr/include/pcl-1.12/pcl/PCLPointField.h \
+ /usr/include/pcl-1.12/pcl/common/io.h /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /usr/include/pcl-1.12/pcl/PolygonMesh.h \
+ /usr/include/pcl-1.12/pcl/Vertices.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/pcl-1.12/pcl/common/impl/io.hpp \
+ /usr/include/pcl-1.12/pcl/conversions.h \
  /usr/include/pcl-1.12/pcl/PCLImage.h \
  /usr/include/pcl-1.12/pcl/for_each_type.h \
  /usr/include/boost/mpl/is_sequence.hpp /usr/include/boost/mpl/and.hpp \
@@ -757,6 +774,22 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/type_traits/is_base_and_derived.hpp \
  /usr/include/boost/utility/addressof.hpp \
  /usr/include/boost/foreach_fwd.hpp \
+ /usr/include/pcl-1.12/pcl/common/concatenate.h \
+ /usr/include/pcl-1.12/pcl/common/copy_point.h \
+ /usr/include/pcl-1.12/pcl/common/impl/copy_point.hpp \
+ /usr/include/pcl-1.12/pcl/point_types.h /usr/include/c++/11/bitset \
+ /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
+ /usr/include/pcl-1.12/pcl/register_point_struct.h \
+ /usr/include/boost/preprocessor/seq/for_each.hpp \
+ /usr/include/boost/preprocessor/repetition/for.hpp \
+ /usr/include/boost/preprocessor/repetition/detail/for.hpp \
+ /usr/include/boost/preprocessor/seq/seq.hpp \
+ /usr/include/boost/preprocessor/seq/elem.hpp \
+ /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
+ /usr/include/boost/preprocessor/seq/transform.hpp \
+ /usr/include/boost/preprocessor/seq/fold_left.hpp \
+ /usr/include/pcl-1.12/pcl/io/pcd_io.h \
+ /usr/include/pcl-1.12/pcl/io/file_io.h \
  /usr/include/boost/numeric/conversion/cast.hpp \
  /usr/include/boost/type.hpp \
  /usr/include/boost/numeric/conversion/converter.hpp \
@@ -813,11 +846,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/concept/usage.hpp \
  /usr/include/boost/concept/detail/concept_def.hpp \
  /usr/include/boost/preprocessor/seq/for_each_i.hpp \
- /usr/include/boost/preprocessor/repetition/for.hpp \
- /usr/include/boost/preprocessor/repetition/detail/for.hpp \
- /usr/include/boost/preprocessor/seq/seq.hpp \
- /usr/include/boost/preprocessor/seq/elem.hpp \
- /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
  /usr/include/boost/concept/detail/concept_undef.hpp \
  /usr/include/boost/iterator/iterator_concepts.hpp \
  /usr/include/boost/range/value_type.hpp \
@@ -834,8 +862,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/utility/binary.hpp \
  /usr/include/boost/preprocessor/control/deduce_d.hpp \
  /usr/include/boost/preprocessor/seq/cat.hpp \
- /usr/include/boost/preprocessor/seq/fold_left.hpp \
- /usr/include/boost/preprocessor/seq/transform.hpp \
  /usr/include/boost/preprocessor/arithmetic/mod.hpp \
  /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
  /usr/include/boost/utility/identity_type.hpp \
@@ -857,13 +883,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/range/iterator_range_io.hpp \
  /usr/include/boost/range/detail/str_types.hpp \
  /usr/include/boost/algorithm/string/compare.hpp \
- /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/boost/algorithm/string/find.hpp \
  /usr/include/boost/algorithm/string/finder.hpp \
  /usr/include/boost/algorithm/string/constants.hpp \
@@ -995,20 +1014,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /usr/include/pcl-1.12/pcl/common/io.h /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h \
- /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /usr/include/pcl-1.12/pcl/PointIndices.h \
- /usr/include/pcl-1.12/pcl/PolygonMesh.h \
- /usr/include/pcl-1.12/pcl/Vertices.h \
- /usr/include/pcl-1.12/pcl/common/impl/io.hpp \
- /usr/include/pcl-1.12/pcl/common/concatenate.h \
- /usr/include/pcl-1.12/pcl/common/copy_point.h \
- /usr/include/pcl-1.12/pcl/common/impl/copy_point.hpp \
- /usr/include/pcl-1.12/pcl/point_types.h /usr/include/c++/11/bitset \
- /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
- /usr/include/pcl-1.12/pcl/register_point_struct.h \
- /usr/include/boost/preprocessor/seq/for_each.hpp \
  /usr/include/pcl-1.12/pcl/io/low_level_io.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
@@ -1017,10 +1022,44 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
  /usr/include/x86_64-linux-gnu/sys/fcntl.h \
  /usr/include/pcl-1.12/pcl/io/lzf.h \
- /usr/include/pcl-1.12/pcl/visualization/cloud_viewer.h \
+ /usr/include/pcl-1.12/pcl/sample_consensus/ransac.h \
+ /usr/include/pcl-1.12/pcl/sample_consensus/sac.h \
+ /usr/include/pcl-1.12/pcl/sample_consensus/sac_model.h \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/boost/random/mersenne_twister.hpp \
+ /usr/include/boost/integer/integer_mask.hpp \
+ /usr/include/boost/integer_fwd.hpp /usr/include/boost/integer.hpp \
+ /usr/include/boost/integer_traits.hpp \
+ /usr/include/boost/random/detail/config.hpp \
+ /usr/include/boost/random/detail/ptr_helper.hpp \
+ /usr/include/boost/random/detail/seed.hpp \
+ /usr/include/boost/random/detail/seed_impl.hpp \
+ /usr/include/boost/integer/static_log2.hpp \
+ /usr/include/boost/random/traits.hpp \
+ /usr/include/boost/random/detail/const_mod.hpp \
+ /usr/include/boost/random/detail/large_arithmetic.hpp \
+ /usr/include/boost/random/detail/integer_log2.hpp \
+ /usr/include/boost/integer/integer_log2.hpp \
+ /usr/include/boost/random/detail/disable_warnings.hpp \
+ /usr/include/boost/random/detail/enable_warnings.hpp \
+ /usr/include/boost/random/detail/signed_unsigned_tools.hpp \
+ /usr/include/boost/random/detail/generator_bits.hpp \
+ /usr/include/boost/random/detail/generator_seed_seq.hpp \
+ /usr/include/boost/random/detail/polynomial.hpp \
+ /usr/include/boost/random/uniform_int.hpp \
+ /usr/include/boost/random/uniform_int_distribution.hpp \
+ /usr/include/boost/random/detail/operators.hpp \
+ /usr/include/boost/random/detail/uniform_int_float.hpp \
+ /usr/include/boost/random/variate_generator.hpp \
+ /usr/include/pcl-1.12/pcl/sample_consensus/model_types.h \
+ /usr/include/pcl-1.12/pcl/search/search.h \
+ /usr/include/boost/random/uniform_01.hpp \
+ /usr/include/pcl-1.12/pcl/sample_consensus/sac_model_plane.h \
+ /usr/include/pcl-1.12/pcl/sample_consensus/sac_model_sphere.h \
  /usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h \
  /usr/include/pcl-1.12/pcl/correspondence.h \
- /usr/include/pcl-1.12/pcl/pcl_base.h \
  /usr/include/pcl-1.12/pcl/ModelCoefficients.h \
  /usr/include/pcl-1.12/pcl/TextureMesh.h \
  /usr/include/pcl-1.12/pcl/visualization/common/actor_map.h \
@@ -1079,10 +1118,7 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/vtk-9.1/vtkDataArray.h \
  /usr/include/vtk-9.1/vtkUnsignedCharArray.h \
  /usr/include/pcl-1.12/pcl/visualization/impl/point_cloud_color_handlers.hpp \
- /usr/include/c++/11/set /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/stl_set.h \
- /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/pcl-1.12/pcl/common/colors.h \
  /usr/include/pcl-1.12/pcl/common/point_tests.h \
@@ -1110,8 +1146,7 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/boost/function/detail/prologue.hpp \
  /usr/include/boost/config/no_tr1/functional.hpp \
  /usr/include/boost/function/function_base.hpp \
- /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
- /usr/include/boost/integer_traits.hpp /usr/include/boost/type_index.hpp \
+ /usr/include/boost/type_index.hpp \
  /usr/include/boost/type_index/stl_type_index.hpp \
  /usr/include/boost/type_index/type_index_facade.hpp \
  /usr/include/boost/container_hash/hash_fwd.hpp \
@@ -1391,25 +1426,4 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/pcl-1.12/pcl/visualization/common/impl/shapes.hpp \
  /usr/include/vtk-9.1/vtkPolygon.h \
  /usr/include/vtk-9.1/vtkUnstructuredGrid.h \
- /usr/include/vtk-9.1/vtkUnstructuredGridBase.h \
- /usr/include/boost/filesystem/path.hpp \
- /usr/include/boost/filesystem/config.hpp \
- /usr/include/boost/system/api_config.hpp \
- /usr/include/boost/filesystem/path_traits.hpp \
- /usr/include/boost/system/error_code.hpp \
- /usr/include/boost/system/detail/config.hpp \
- /usr/include/boost/cerrno.hpp \
- /usr/include/boost/system/detail/generic_category.hpp \
- /usr/include/boost/system/detail/system_category_posix.hpp \
- /usr/include/boost/system/detail/std_interoperability.hpp \
- /usr/include/c++/11/mutex /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h \
- /usr/include/boost/config/abi_prefix.hpp \
- /usr/include/boost/config/abi_suffix.hpp \
- /usr/include/boost/system/system_error.hpp \
- /usr/include/boost/io/quoted.hpp \
- /usr/include/boost/io/detail/buffer_fill.hpp \
- /usr/include/boost/io/detail/ostream_guard.hpp \
- /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp
+ /usr/include/vtk-9.1/vtkUnstructuredGridBase.h
