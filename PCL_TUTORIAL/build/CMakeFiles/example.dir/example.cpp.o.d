@@ -1426,4 +1426,6 @@ CMakeFiles/example.dir/example.cpp.o: \
  /usr/include/pcl-1.12/pcl/visualization/common/impl/shapes.hpp \
  /usr/include/vtk-9.1/vtkPolygon.h \
  /usr/include/vtk-9.1/vtkUnstructuredGrid.h \
- /usr/include/vtk-9.1/vtkUnstructuredGridBase.h
+ /usr/include/vtk-9.1/vtkUnstructuredGridBase.h \
+ /usr/include/pcl-1.12/pcl/segmentation/sac_segmentation.h \
+ /usr/include/pcl-1.12/pcl/sample_consensus/method_types.h
