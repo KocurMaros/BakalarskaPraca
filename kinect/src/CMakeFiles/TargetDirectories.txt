@@ -1,0 +1,3 @@
+/home/laptop/school/BK/kinect/src/CMakeFiles/openni_grabber.dir
+/home/laptop/school/BK/kinect/src/CMakeFiles/edit_cache.dir
+/home/laptop/school/BK/kinect/src/CMakeFiles/rebuild_cache.dir

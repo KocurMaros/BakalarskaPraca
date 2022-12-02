@@ -1,0 +1,21 @@
+# Fdb version 3
+["pdflatex"] 1668527035 "/home/laptop/school/BK/dokumentation/example.tex" "example.pdf" "example" 1668527035
+  "/etc/texmf/web2c/texmf.cnf" 1668522313 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/laptop/school/BK/dokumentation/example.tex" 1668527035 2379 d47be2e8dd814ecfacba4a6fe51496da ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty" 1643231327 147419 2058c0f5e6893b19c8f3ce95d177646c ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf" 1643231327 1594 91a7945a5d2d372cc482cba5e147cfe3 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def" 1643231327 5233 d5e383ed66bf272b71b1a90b596e21c6 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty" 1622581934 5049 969aec05d5f39c43f8005910498fcf90 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo" 1636758526 8449 bc7344e882df4d7e51c046514dee83e4 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668522318 1405657 8df33878c96e44acc1bbbd6863bde8b2 ""
+  "FEIstyle.cls" 1668523360 24748 81f3aebc4d3f793135956f99162c62ed ""
+  "csquotes.sty" 0 -1 0 ""
+  "example.aux" 1668527035 32 3985256e7290058c681f74d7a3565a19 ""
+  "example.tex" 1668527035 2379 d47be2e8dd814ecfacba4a6fe51496da ""
+  (generated)
+  "example.log"
+  "example.pdf"
