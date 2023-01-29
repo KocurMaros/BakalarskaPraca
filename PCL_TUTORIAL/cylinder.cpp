@@ -55,7 +55,7 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  reader.read ("../pcd/mug.pcd", *cloud);
+  reader.read ("../pcd/kinect_pcd1.pcd", *cloud);
   // viewer = simpleVis(cloud);
   // viewer->spin();
 
@@ -96,7 +96,7 @@ main (int argc, char** argv)
   pcl::PointCloud<PointT>::Ptr cloud_plane (new pcl::PointCloud<PointT> ());
   extract.filter (*cloud_plane);
   std::cerr << "PointCloud representing the planar component: " << cloud_plane->size () << " data points." << std::endl;
-  // writer.write ("table_scene_mug_stereo_textured_plane.pcd", *cloud_plane, false);
+  writer.write ("table_scene_mug_stereo_textured_plane.pcd", *cloud_plane, false);
 
   // Remove the planar inliers, extract the rest
   extract.setNegative (true);
@@ -113,8 +113,8 @@ main (int argc, char** argv)
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setNormalDistanceWeight (0.1); //surface normals influence
   seg.setMaxIterations (10000);
-  seg.setDistanceThreshold (0.05); //inlier
-  seg.setRadiusLimits (0, 0.1);   //maximalny rozmer telesa
+  seg.setDistanceThreshold (0.1); //inlier
+  seg.setRadiusLimits (0, 0.2);   //maximalny rozmer telesa
   seg.setInputCloud (cloud_filtered2);
   seg.setInputNormals (cloud_normals2);
 
