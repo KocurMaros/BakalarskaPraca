@@ -13,6 +13,12 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
 
+add_executable(cylinder cylinder.cpp)
+add_executable(make_pcd save_to_pcd.cpp)
 add_executable(example example.cpp)
-target_link_libraries(example ${PCL_LIBRARIES} ${Boost_LIBRARIES})
+add_executable(sphere sphere.cpp)
 
+target_link_libraries(cylinder ${PCL_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(make_pcd ${PCL_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(example ${PCL_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(sphere ${PCL_LIBRARIES} ${Boost_LIBRARIES})
