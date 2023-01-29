@@ -76,11 +76,11 @@ main (int argc, char** argv)
   // viewer->spin();
   // Create the segmentation object for the planar model and set all the parameters
   seg.setOptimizeCoefficients (true);
-  seg.setModelType (pcl::SACMODEL_NORMAL_PLANE);
-  seg.setNormalDistanceWeight (0.1);
+  seg.setModelType (pcl::SACMODEL_NORMAL_PLANE);  
+  seg.setNormalDistanceWeight (0.1);    //surface normals influence
   seg.setMethodType (pcl::SAC_RANSAC);
-  seg.setMaxIterations (100);
-  seg.setDistanceThreshold (0.03);
+  seg.setMaxIterations (100);     
+  seg.setDistanceThreshold (0.03);  //inlier
   seg.setInputCloud (cloud_filtered);
   seg.setInputNormals (cloud_normals);
   // Obtain the plane inliers and coefficients
@@ -109,12 +109,12 @@ main (int argc, char** argv)
   // viewer->spin();
   // Create the segmentation object for cylinder segmentation and set all the parameters
   seg.setOptimizeCoefficients (true);
-  seg.setModelType (pcl::SACMODEL_CYLINDER);
+  seg.setModelType (pcl::SACMODEL_CYLINDER);    //teleso
   seg.setMethodType (pcl::SAC_RANSAC);
-  seg.setNormalDistanceWeight (0.1);
+  seg.setNormalDistanceWeight (0.1); //surface normals influence
   seg.setMaxIterations (10000);
-  seg.setDistanceThreshold (0.05);
-  seg.setRadiusLimits (0, 0.1);
+  seg.setDistanceThreshold (0.05); //inlier
+  seg.setRadiusLimits (0, 0.1);   //maximalny rozmer telesa
   seg.setInputCloud (cloud_filtered2);
   seg.setInputNormals (cloud_normals2);
 
