@@ -55,7 +55,7 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  reader.read ("pcd/mug1.pcd", *cloud);
+  reader.read ("pcd/mug.pcd", *cloud);
 
   std::cerr << "PointCloud has: " << cloud->size () << " data points." << std::endl;
   // Build a passthrough filter to remove spurious NaNs
@@ -128,11 +128,11 @@ main (int argc, char** argv)
   extract.filter (*cloud_cylinder);
   viewer = simpleVis(cloud);
   // viewer->spin();
-  while (!viewer->wasStopped ())
-  {
-    // viewer->spinOnce (100);
-    // std::this_thread::sleep_for(100ms);
-  }
+  // while (!viewer->wasStopped ())
+  // {
+  //   // viewer->spinOnce (100);
+  //   // std::this_thread::sleep_for(100ms);
+  // }
   if (cloud_cylinder->points.empty ()) 
     std::cerr << "Can't find the cylindrical component." << std::endl;
   else
