@@ -1,4 +1,0 @@
-/home/laptop/school/BK/libfreenect2pclgrabber/CMakeFiles/Kinect2Grabber.dir
-/home/laptop/school/BK/libfreenect2pclgrabber/CMakeFiles/MultiKinect2Grabber.dir
-/home/laptop/school/BK/libfreenect2pclgrabber/CMakeFiles/edit_cache.dir
-/home/laptop/school/BK/libfreenect2pclgrabber/CMakeFiles/rebuild_cache.dir

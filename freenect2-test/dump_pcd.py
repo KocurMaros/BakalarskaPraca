@@ -22,7 +22,7 @@ with device.running():
 rgb, depth = frames[FrameType.Color], frames[FrameType.Depth]
 undistorted, registered, big_depth = device.registration.apply(
     rgb, depth, with_big_depth=True)
-
+rgb.to_image().save('output_rgb.png')
 # Combine the depth and RGB data together into a single point cloud.
 with open('output.pcd', 'wb') as fobj:
     device.registration.write_pcd(fobj, undistorted, registered)

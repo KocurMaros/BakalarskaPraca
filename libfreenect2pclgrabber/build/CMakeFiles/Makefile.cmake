@@ -7,12 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/laptop/freenect2/lib/cmake/freenect2/freenect2Config.cmake"
+  "/home/laptop/freenect2/lib/cmake/freenect2/freenect2ConfigVersion.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx"
   "CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx"
-  "../modules/FindFreenect2.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.74.0.cmake"

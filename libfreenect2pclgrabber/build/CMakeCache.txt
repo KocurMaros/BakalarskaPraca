@@ -227,12 +227,6 @@ FLANN_LIBRARY_SHARED:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann_cpp.so
 FLANN_LIBRARY_STATIC:FILEPATH=/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 
 //Path to a file.
-FREENECT2_INCLUDE_DIRS:PATH=FREENECT2_INCLUDE_DIRS-NOTFOUND
-
-//Path to a library.
-FREENECT2_LIBRARY:FILEPATH=FREENECT2_LIBRARY-NOTFOUND
-
-//Path to a file.
 FREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/include/freetype2
 
 //Path to a file.
@@ -600,21 +594,6 @@ VTK_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1
 //Number of processors available to run parallel tests.
 VTK_MPI_NUMPROCS:STRING=2
 
-//adds cuda support for freenect2
-WITH_CUDA:BOOL=OFF
-
-//adds opencl support for freenect2
-WITH_OPENCL:BOOL=OFF
-
-//adds pcl cloud support
-WITH_PCL:BOOL=ON
-
-//adds support for ROS
-WITH_ROS:BOOL=OFF
-
-//adds support for boost serialization
-WITH_SERIALIZATION:BOOL=OFF
-
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=/usr/include
 
@@ -640,10 +619,10 @@ X11_X11_xcb_INCLUDE_PATH:PATH=X11_X11_xcb_INCLUDE_PATH-NOTFOUND
 X11_X11_xcb_LIB:FILEPATH=X11_X11_xcb_LIB-NOTFOUND
 
 //Path to a file.
-X11_XRes_INCLUDE_PATH:PATH=X11_XRes_INCLUDE_PATH-NOTFOUND
+X11_XRes_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_XRes_LIB:FILEPATH=X11_XRes_LIB-NOTFOUND
+X11_XRes_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXRes.so
 
 //Path to a file.
 X11_XShm_INCLUDE_PATH:PATH=/usr/include
@@ -652,7 +631,7 @@ X11_XShm_INCLUDE_PATH:PATH=/usr/include
 X11_XSync_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_Xaccessrules_INCLUDE_PATH:PATH=X11_Xaccessrules_INCLUDE_PATH-NOTFOUND
+X11_Xaccessrules_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
 X11_Xaccessstr_INCLUDE_PATH:PATH=/usr/include
@@ -670,10 +649,10 @@ X11_Xaw_INCLUDE_PATH:PATH=X11_Xaw_INCLUDE_PATH-NOTFOUND
 X11_Xaw_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXaw.so
 
 //Path to a file.
-X11_Xcomposite_INCLUDE_PATH:PATH=X11_Xcomposite_INCLUDE_PATH-NOTFOUND
+X11_Xcomposite_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xcomposite_LIB:FILEPATH=X11_Xcomposite_LIB-NOTFOUND
+X11_Xcomposite_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXcomposite.so
 
 //Path to a file.
 X11_Xcursor_INCLUDE_PATH:PATH=/usr/include
@@ -682,10 +661,10 @@ X11_Xcursor_INCLUDE_PATH:PATH=/usr/include
 X11_Xcursor_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXcursor.so
 
 //Path to a file.
-X11_Xdamage_INCLUDE_PATH:PATH=X11_Xdamage_INCLUDE_PATH-NOTFOUND
+X11_Xdamage_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xdamage_LIB:FILEPATH=X11_Xdamage_LIB-NOTFOUND
+X11_Xdamage_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXdamage.so
 
 //Path to a file.
 X11_Xdmcp_INCLUDE_PATH:PATH=/usr/include
@@ -772,10 +751,10 @@ X11_Xt_INCLUDE_PATH:PATH=/usr/include
 X11_Xt_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXt.so
 
 //Path to a file.
-X11_Xtst_INCLUDE_PATH:PATH=X11_Xtst_INCLUDE_PATH-NOTFOUND
+X11_Xtst_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xtst_LIB:FILEPATH=X11_Xtst_LIB-NOTFOUND
+X11_Xtst_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXtst.so
 
 //Path to a file.
 X11_Xutil_INCLUDE_PATH:PATH=/usr/include
@@ -841,10 +820,10 @@ X11_xkbcommon_X11_INCLUDE_PATH:PATH=X11_xkbcommon_X11_INCLUDE_PATH-NOTFOUND
 X11_xkbcommon_X11_LIB:FILEPATH=X11_xkbcommon_X11_LIB-NOTFOUND
 
 //Path to a file.
-X11_xkbfile_INCLUDE_PATH:PATH=X11_xkbfile_INCLUDE_PATH-NOTFOUND
+X11_xkbfile_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_xkbfile_LIB:FILEPATH=X11_xkbfile_LIB-NOTFOUND
+X11_xkbfile_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxkbfile.so
 
 //Path to a file.
 ZLIB_INCLUDE_DIR:PATH=/usr/include
@@ -881,6 +860,12 @@ double-conversion_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libdouble-conversio
 
 //The directory containing a CMake configuration file for flann.
 flann_DIR:PATH=flann_DIR-NOTFOUND
+
+//Path to a file.
+freenect2_INCLUDE_DIR:PATH=/home/laptop/freenect2/include
+
+//Path to a library.
+freenect2_LIBRARY:FILEPATH=/home/laptop/freenect2/lib/libfreenect2.so
 
 //Value Computed by CMake
 kinect2grabber_BINARY_DIR:STATIC=/home/laptop/school/BK/libfreenect2pclgrabber/build
