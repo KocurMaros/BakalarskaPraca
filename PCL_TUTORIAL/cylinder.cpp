@@ -55,7 +55,7 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  reader.read ("../pcd/kinect_pcd1.pcd", *cloud);
+  reader.read ("../pcd/mug.pcd", *cloud);
   // viewer = simpleVis(cloud);
   // viewer->spin();
 
