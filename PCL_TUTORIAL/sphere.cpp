@@ -44,7 +44,7 @@ main(int argc, char** argv)
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
     pcl::PointCloud<pcl::PointXYZ>::Ptr final (new pcl::PointCloud<pcl::PointXYZ>);
     pcl::PCDReader reader;
-    reader.read ("pcd/kinect_pcd1.pcd", *cloud);
+    reader.read ("../pcd/kinect_pcd1.pcd", *cloud);
 
     // populate our PointCloud with points
     // cloud->width    = 500;
