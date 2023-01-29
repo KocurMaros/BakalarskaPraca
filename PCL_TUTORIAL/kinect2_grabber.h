@@ -3,8 +3,8 @@
 #ifndef KINECT2_GRABBER
 #define KINECT2_GRABBER
 #define NOMINMAX
-// #include <Windows.h>
-// #include <Kinect.h>
+#include <Windows.h>
+#include <Kinect.h>
 #include <pcl/io/boost.h>
 #include <pcl/io/grabber.h>
 #include <pcl/point_cloud.h>

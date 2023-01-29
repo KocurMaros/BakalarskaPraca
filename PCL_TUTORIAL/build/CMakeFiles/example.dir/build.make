@@ -100,6 +100,7 @@ example: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 example: /usr/lib/x86_64-linux-gnu/libOpenNI2.so
 example: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 example: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+example: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0
 example: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
 example: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
 example: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
@@ -174,6 +175,7 @@ example: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0
 example: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.74.0
 example: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.74.0
 example: /usr/lib/x86_64-linux-gnu/libqhull_r.so.8.0.2
+example: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0
 example: CMakeFiles/example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/laptop/school/BK/PCL_TUTORIAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example.dir/link.txt --verbose=$(VERBOSE)
