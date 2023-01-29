@@ -55,7 +55,9 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  reader.read ("pcd/mug.pcd", *cloud);
+  reader.read ("pcd/kinect_pcd1.pcd", *cloud);
+  // viewer = simpleVis(cloud);
+  // viewer->spin();
 
   std::cerr << "PointCloud has: " << cloud->size () << " data points." << std::endl;
   // Build a passthrough filter to remove spurious NaNs
@@ -64,15 +66,14 @@ main (int argc, char** argv)
   pass.setFilterLimits (0, 1.5);
   pass.filter (*cloud_filtered);
   std::cerr << "PointCloud after filtering has: " << cloud_filtered->size () << " data points." << std::endl;
-  // viewer = simpleVis(cloud_filtered);
-  // viewer->spin();
 
   // Estimate point normals
   ne.setSearchMethod (tree);
   ne.setInputCloud (cloud_filtered);
   ne.setKSearch (50);
   ne.compute (*cloud_normals);
-
+  // viewer = simpleVis(cloud_filtered);
+  // viewer->spin();
   // Create the segmentation object for the planar model and set all the parameters
   seg.setOptimizeCoefficients (true);
   seg.setModelType (pcl::SACMODEL_NORMAL_PLANE);
@@ -95,7 +96,7 @@ main (int argc, char** argv)
   pcl::PointCloud<PointT>::Ptr cloud_plane (new pcl::PointCloud<PointT> ());
   extract.filter (*cloud_plane);
   std::cerr << "PointCloud representing the planar component: " << cloud_plane->size () << " data points." << std::endl;
-  writer.write ("table_scene_mug_stereo_textured_plane.pcd", *cloud_plane, false);
+  // writer.write ("table_scene_mug_stereo_textured_plane.pcd", *cloud_plane, false);
 
   // Remove the planar inliers, extract the rest
   extract.setNegative (true);
@@ -104,7 +105,8 @@ main (int argc, char** argv)
   extract_normals.setInputCloud (cloud_normals);
   extract_normals.setIndices (inliers_plane);
   extract_normals.filter (*cloud_normals2);
-
+  // viewer = simpleVis(cloud_filtered2);
+  // viewer->spin();
   // Create the segmentation object for cylinder segmentation and set all the parameters
   seg.setOptimizeCoefficients (true);
   seg.setModelType (pcl::SACMODEL_CYLINDER);
@@ -126,8 +128,8 @@ main (int argc, char** argv)
   extract.setNegative (false);
   pcl::PointCloud<PointT>::Ptr cloud_cylinder (new pcl::PointCloud<PointT> ());
   extract.filter (*cloud_cylinder);
-  viewer = simpleVis(cloud);
-  // viewer->spin();
+  viewer = simpleVis(cloud_cylinder);
+  viewer->spin();
   // while (!viewer->wasStopped ())
   // {
   //   // viewer->spinOnce (100);
