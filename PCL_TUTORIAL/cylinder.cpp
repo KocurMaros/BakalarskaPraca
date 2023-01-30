@@ -55,7 +55,7 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  reader.read ("../pcd/kinect_pcd1.pcd", *cloud);
+  reader.read ("../pcd/mug.pcd", *cloud);
   // viewer = simpleVis(cloud);
   // viewer->spin();
 
@@ -109,12 +109,12 @@ main (int argc, char** argv)
   // viewer->spin();
   // Create the segmentation object for cylinder segmentation and set all the parameters
   seg.setOptimizeCoefficients (true);
-  seg.setModelType (pcl::SACMODEL_CYLINDER);    //teleso
+  seg.setModelType (pcl::SACMODEL_SPHERE);    //teleso SACMODEL_CYLINDER
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setNormalDistanceWeight (0.1); //surface normals influence
   seg.setMaxIterations (10000);
-  seg.setDistanceThreshold (0.1); //inlier
-  seg.setRadiusLimits (0, 0.2);   //maximalny rozmer telesa
+  seg.setDistanceThreshold (0.05); //inlier
+  seg.setRadiusLimits (0, 0.1);   //maximalny rozmer telesa
   seg.setInputCloud (cloud_filtered2);
   seg.setInputNormals (cloud_normals2);
 
@@ -128,8 +128,8 @@ main (int argc, char** argv)
   extract.setNegative (false);
   pcl::PointCloud<PointT>::Ptr cloud_cylinder (new pcl::PointCloud<PointT> ());
   extract.filter (*cloud_cylinder);
-  viewer = simpleVis(cloud_cylinder);
-  viewer->spin();
+  // viewer = simpleVis(cloud_cylinder);
+  // viewer->spin();
   // while (!viewer->wasStopped ())
   // {
   //   // viewer->spinOnce (100);

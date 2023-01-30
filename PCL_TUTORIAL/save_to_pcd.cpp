@@ -11,6 +11,8 @@ using namespace std;
 
 const string OUT_DIR = "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/pcd/"; 
 
+//export LIBVA_DRIVER_NAME=i965
+
 class SimpleOpenNIViewer 
 { 
 public: 

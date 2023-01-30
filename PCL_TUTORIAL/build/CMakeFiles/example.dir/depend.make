@@ -256,7 +256,6 @@ CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/impl/pcl_base.hp
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/impl/point_types.hpp
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/boost.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/eigen.h
-CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/file_io.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/grabber.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/image.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/image_depth.h
@@ -264,15 +263,11 @@ CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/image_ir.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/image_metadata_wrapper.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/image_rgb24.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/image_yuv422.h
-CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/impl/pcd_io.hpp
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/io_exception.h
-CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/low_level_io.h
-CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/lzf.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/openni2/openni.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/openni2/openni2_device.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/openni2/openni2_video_mode.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/openni2_grabber.h
-CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/io/pcd_io.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/make_shared.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/pcl_base.h
 CMakeFiles/example.dir/example.cpp.o: /usr/include/pcl-1.10/pcl/pcl_config.h
