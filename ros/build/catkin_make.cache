@@ -1,2 +1,0 @@
-my_pcl_tutorial
--DCATKIN_DEVEL_PREFIX=/home/laptop/BakalarskaPraca/code/devel -DCMAKE_INSTALL_PREFIX=/home/laptop/BakalarskaPraca/code/install -G Unix Makefiles
