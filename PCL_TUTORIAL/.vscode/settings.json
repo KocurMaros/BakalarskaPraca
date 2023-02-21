@@ -2,7 +2,11 @@
     "files.associations": {
         "cmath": "cpp",
         "array": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "sstream": "cpp",
+        "functional": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp"
     },
     "ros.distro": "humble"
 }

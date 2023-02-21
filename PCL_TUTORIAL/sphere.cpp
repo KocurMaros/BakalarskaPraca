@@ -109,10 +109,11 @@ main(int argc, char** argv)
         viewer = simpleVis(final);
     else
         viewer = simpleVis(cloud);
-    while (!viewer->wasStopped ())
-    {
-        viewer->spinOnce (100);
-        std::this_thread::sleep_for(100ms);
-    }
+    viewer->spin();
+    // while (!viewer->wasStopped ())
+    // {
+    //     viewer->spinOnce (100);
+    //     std::this_thread::sleep_for(100ms);
+    // }
     return 0;
 }

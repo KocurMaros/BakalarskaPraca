@@ -343,7 +343,7 @@ OPENNI_INCLUDE_DIR:PATH=/usr/include/ni
 OPENNI_LIBRARY:FILEPATH=/usr/lib/libOpenNI.so
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
+OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
 
 //path to 2d headers
 PCL_2D_INCLUDE_DIR:PATH=/usr/include/pcl-1.12

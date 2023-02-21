@@ -169,41 +169,41 @@ sphere/fast:
 .PHONY : sphere/fast
 
 #=============================================================================
-# Target rules for targets named alignment
+# Target rules for targets named concatenate
 
 # Build rule for target.
-alignment: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 alignment
-.PHONY : alignment
+concatenate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 concatenate
+.PHONY : concatenate
 
 # fast build rule for target.
-alignment/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alignment.dir/build.make CMakeFiles/alignment.dir/build
-.PHONY : alignment/fast
+concatenate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concatenate.dir/build.make CMakeFiles/concatenate.dir/build
+.PHONY : concatenate/fast
 
-alignment.o: alignment.cpp.o
-.PHONY : alignment.o
+concatenate_clouds.o: concatenate_clouds.cpp.o
+.PHONY : concatenate_clouds.o
 
 # target to build an object file
-alignment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alignment.dir/build.make CMakeFiles/alignment.dir/alignment.cpp.o
-.PHONY : alignment.cpp.o
+concatenate_clouds.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concatenate.dir/build.make CMakeFiles/concatenate.dir/concatenate_clouds.cpp.o
+.PHONY : concatenate_clouds.cpp.o
 
-alignment.i: alignment.cpp.i
-.PHONY : alignment.i
+concatenate_clouds.i: concatenate_clouds.cpp.i
+.PHONY : concatenate_clouds.i
 
 # target to preprocess a source file
-alignment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alignment.dir/build.make CMakeFiles/alignment.dir/alignment.cpp.i
-.PHONY : alignment.cpp.i
+concatenate_clouds.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concatenate.dir/build.make CMakeFiles/concatenate.dir/concatenate_clouds.cpp.i
+.PHONY : concatenate_clouds.cpp.i
 
-alignment.s: alignment.cpp.s
-.PHONY : alignment.s
+concatenate_clouds.s: concatenate_clouds.cpp.s
+.PHONY : concatenate_clouds.s
 
 # target to generate assembly for a file
-alignment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alignment.dir/build.make CMakeFiles/alignment.dir/alignment.cpp.s
-.PHONY : alignment.cpp.s
+concatenate_clouds.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concatenate.dir/build.make CMakeFiles/concatenate.dir/concatenate_clouds.cpp.s
+.PHONY : concatenate_clouds.cpp.s
 
 cylinder.o: cylinder.cpp.o
 .PHONY : cylinder.o
@@ -309,14 +309,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... alignment"
+	@echo "... concatenate"
 	@echo "... cylinder"
 	@echo "... example"
 	@echo "... make_pcd"
 	@echo "... sphere"
-	@echo "... alignment.o"
-	@echo "... alignment.i"
-	@echo "... alignment.s"
+	@echo "... concatenate_clouds.o"
+	@echo "... concatenate_clouds.i"
+	@echo "... concatenate_clouds.s"
 	@echo "... cylinder.o"
 	@echo "... cylinder.i"
 	@echo "... cylinder.s"

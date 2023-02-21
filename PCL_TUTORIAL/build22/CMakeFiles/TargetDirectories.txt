@@ -2,6 +2,6 @@
 /home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/make_pcd.dir
 /home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/example.dir
 /home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/sphere.dir
-/home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/alignment.dir
+/home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/concatenate.dir
 /home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/edit_cache.dir
 /home/laptop/school/BK/PCL_TUTORIAL/build22/CMakeFiles/rebuild_cache.dir

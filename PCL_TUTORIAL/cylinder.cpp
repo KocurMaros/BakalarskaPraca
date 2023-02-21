@@ -55,7 +55,7 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  reader.read ("../pcd/mug.pcd", *cloud);
+  reader.read ("../../../PCD_DATA/segmentation/mOSD/learn/learn40.pcd", *cloud);
   // viewer = simpleVis(cloud);
   // viewer->spin();
 
@@ -109,7 +109,7 @@ main (int argc, char** argv)
   // viewer->spin();
   // Create the segmentation object for cylinder segmentation and set all the parameters
   seg.setOptimizeCoefficients (true);
-  seg.setModelType (pcl::SACMODEL_SPHERE);    //teleso SACMODEL_CYLINDER
+  seg.setModelType (pcl::SACMODEL_CYLINDER);    //teleso SACMODEL_CYLINDER  //SACMODEL_SPHERE 
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setNormalDistanceWeight (0.1); //surface normals influence
   seg.setMaxIterations (10000);

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <functional>
 
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
@@ -8,6 +9,7 @@
 #include <pcl/visualization/cloud_viewer.h>
 
 using namespace std; 
+// using namespace placeholders;
 
 const string OUT_DIR = "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/pcd/"; 
 
@@ -26,7 +28,6 @@ public:
     { 
                 if (!viewer.wasStopped()) { 
                         viewer.showCloud (cloud); 
-
                         if( save_one ) { 
                                 save_one = false; 
                                 std::stringstream out; 
@@ -41,16 +42,18 @@ public:
     { 
                 pcl::Grabber* interface = new pcl::io::OpenNI2Grabber(); 
 
-                boost::function<void (const pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr&)> f = 
-                        boost::bind (&SimpleOpenNIViewer::cloud_cb_, this, _1); 
+                // boost::function<void (const pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr&)> f = 
+                //         boost::bind (&SimpleOpenNIViewer::cloud_cb_, this, boost::placeholders::_1); 
 
+                std::function<void(const pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr&)> f = 
+                        boost::bind (&SimpleOpenNIViewer::cloud_cb_, this, boost::placeholders::_1); 
                 interface->registerCallback (f); 
 
                 interface->start (); 
 
                 char c; 
-
-                while (!viewer.wasStopped()) 
+                
+                while (!viewer.wasStopped())  
                 { 
                         //sleep (1); 
 
