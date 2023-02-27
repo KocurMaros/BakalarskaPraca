@@ -341,8 +341,6 @@ CMakeFiles/alignment.dir/alignment.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
- /usr/include/pcl-1.12/pcl/point_types.h /usr/include/c++/11/bitset \
- /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
  /usr/include/pcl-1.12/pcl/memory.h \
  /usr/include/pcl-1.12/pcl/type_traits.h \
  /usr/include/pcl-1.12/pcl/point_struct_traits.h \
@@ -550,6 +548,8 @@ CMakeFiles/alignment.dir/alignment.cpp.o: \
  /usr/include/boost/preprocessor/comparison/less.hpp \
  /usr/include/boost/preprocessor/comparison/less_equal.hpp \
  /usr/include/boost/preprocessor/logical/not.hpp \
+ /usr/include/pcl-1.12/pcl/point_types.h /usr/include/c++/11/bitset \
+ /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
  /usr/include/pcl-1.12/pcl/PCLPointField.h \
  /usr/include/pcl-1.12/pcl/types.h \
  /usr/include/pcl-1.12/pcl/register_point_struct.h \

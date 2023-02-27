@@ -2,6 +2,8 @@
 #include <fstream>
 #include <vector>
 #include <Eigen/Core>
+#include <pcl/memory.h>
+#include <pcl/pcl_macros.h>
 #include <pcl/point_types.h>
 #include <pcl/point_cloud.h>
 #include <pcl/io/pcd_io.h>
@@ -124,7 +126,7 @@ class TemplateAlignment
     {
       float fitness_score;
       Eigen::Matrix4f final_transformation;
-      EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+      PCL_MAKE_ALIGNED_OPERATOR_NEW
     };
 
     TemplateAlignment () :
@@ -160,7 +162,7 @@ class TemplateAlignment
     void
     align (FeatureCloud &template_cloud, TemplateAlignment::Result &result)
     {
-      sac_ia_.setInputCloud (template_cloud.getPointCloud ());
+      sac_ia_.setInputSource (template_cloud.getPointCloud ());
       sac_ia_.setSourceFeatures (template_cloud.getLocalFeatures ());
 
       pcl::PointCloud<pcl::PointXYZ> registration_output;
@@ -175,7 +177,7 @@ class TemplateAlignment
     alignAll (std::vector<TemplateAlignment::Result, Eigen::aligned_allocator<Result> > &results)
     {
       results.resize (templates_.size ());
-      for (size_t i = 0; i < templates_.size (); ++i)
+      for (std::size_t i = 0; i < templates_.size (); ++i)
       {
         align (templates_[i], results[i]);
       }
@@ -192,7 +194,7 @@ class TemplateAlignment
       // Find the template with the best (lowest) fitness score
       float lowest_score = std::numeric_limits<float>::infinity ();
       int best_template = 0;
-      for (size_t i = 0; i < results.size (); ++i)
+      for (std::size_t i = 0; i < results.size (); ++i)
       {
         const Result &r = results[i];
         if (r.fitness_score < lowest_score)
@@ -223,32 +225,32 @@ class TemplateAlignment
 int
 main (int argc, char **argv)
 {
-  if (argc < 3)
-  {
-    printf ("No target PCD file given!\n");
-    return (-1);
-  }
+  // if (argc < 3)
+  // {
+  //   printf ("No target PCD file given!\n");
+  //   return (-1);
+  // }
 
   // Load the object templates specified in the object_templates.txt file
   std::vector<FeatureCloud> object_templates;
-  std::ifstream input_stream (argv[1]);
+  // std::ifstream input_stream (argv[1]);
   object_templates.resize (0);
-  std::string pcd_filename;
-  while (input_stream.good ())
-  {
-    std::getline (input_stream, pcd_filename);
-    if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
-      continue;
+  // std::string pcd_filename;
+  // while (input_stream.good ())
+  // {
+  //   std::getline (input_stream, pcd_filename);
+  //   if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
+  //     continue;
 
-    FeatureCloud template_cloud;
-    template_cloud.loadInputCloud (pcd_filename);
-    object_templates.push_back (template_cloud);
-  }
-  input_stream.close ();
+  // }
+  // input_stream.close ();
 
+  FeatureCloud template_cloud;
+  template_cloud.loadInputCloud ("../pcd/table_scene_mug_stereo_textured_cylinder.pcd");
+  object_templates.push_back (template_cloud);
   // Load the target cloud PCD file
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
-  pcl::io::loadPCDFile (argv[2], *cloud);
+  pcl::io::loadPCDFile ("../pcd/mug.pcd", *cloud);
 
   // Preprocess the cloud by...
   // ...removing distant points
@@ -275,7 +277,7 @@ main (int argc, char **argv)
 
   // Set the TemplateAlignment inputs
   TemplateAlignment template_align;
-  for (size_t i = 0; i < object_templates.size (); ++i)
+  for (std::size_t i = 0; i < object_templates.size (); ++i)
   {
     template_align.addTemplateCloud (object_templates[i]);
   }
