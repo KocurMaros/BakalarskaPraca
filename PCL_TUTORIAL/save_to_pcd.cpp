@@ -6,12 +6,13 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 #include <pcl/io/openni2_grabber.h>
+
 #include <pcl/visualization/cloud_viewer.h>
 
 using namespace std; 
 // using namespace placeholders;
 
-const string OUT_DIR = "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/pcd/"; 
+const string OUT_DIR = "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/pcd/"; 
 
 //export LIBVA_DRIVER_NAME=i965
 

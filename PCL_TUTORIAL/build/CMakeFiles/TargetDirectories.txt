@@ -1,6 +1,8 @@
-/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/rebuild_cache.dir
-/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/edit_cache.dir
-/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/sphere.dir
-/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/example.dir
-/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/make_pcd.dir
-/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/cylinder.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/cylinder.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/transform.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/make_pcd.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/sphere.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/concatenate.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/alignment.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/edit_cache.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/rebuild_cache.dir

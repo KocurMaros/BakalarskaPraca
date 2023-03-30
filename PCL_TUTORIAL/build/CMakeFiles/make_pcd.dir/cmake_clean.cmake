@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/make_pcd.dir/save_to_pcd.cpp.o"
+  "CMakeFiles/make_pcd.dir/save_to_pcd.cpp.o.d"
   "make_pcd"
   "make_pcd.pdb"
 )

@@ -56,7 +56,9 @@ main (int argc, char** argv)
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
 
-  reader.read ("../pcd/learn36.pcd", *cloud);
+  reader.read ("/home/laptop/school/libfreenect2/build/bin/points35.pcd", *cloud);
+
+  // reader.read ("../pcd/mug.pcd", *cloud);
   // reader.read ("../../../PCD_DATA/segmentation/mOSD/learn/learn40.pcd", *cloud);
   // viewer = simpleVis(cloud);
   // viewer->spin();
@@ -78,7 +80,8 @@ main (int argc, char** argv)
   // viewer->spin();
   // Create the segmentation object for the planar model and set all the parameters
   seg.setOptimizeCoefficients (true);
-  seg.setModelType (pcl::SACMODEL_NORMAL_PLANE);  
+  seg.setModelType (pcl::SACMODEL_NORMAL_PLANE); 
+
   seg.setNormalDistanceWeight (0.1);    //surface normals influence
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setMaxIterations (100);     
@@ -88,7 +91,6 @@ main (int argc, char** argv)
   // Obtain the plane inliers and coefficients
   seg.segment (*inliers_plane, *coefficients_plane);
   std::cerr << "Plane coefficients: " << *coefficients_plane << std::endl;
-
   // Extract the planar inliers from the input cloud
   extract.setInputCloud (cloud_filtered);
   extract.setIndices (inliers_plane);
@@ -98,7 +100,7 @@ main (int argc, char** argv)
   pcl::PointCloud<PointT>::Ptr cloud_plane (new pcl::PointCloud<PointT> ());
   extract.filter (*cloud_plane);
   std::cerr << "PointCloud representing the planar component: " << cloud_plane->size () << " data points." << std::endl;
-  writer.write ("table_scene_mug_stereo_textured_plane.pcd", *cloud_plane, false);
+  writer.write ("plane.pcd", *cloud_plane, false);
 
   // Remove the planar inliers, extract the rest
   extract.setNegative (true);
@@ -115,7 +117,7 @@ main (int argc, char** argv)
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setNormalDistanceWeight (0.1); //surface normals influence
   seg.setMaxIterations (10000);
-  seg.setDistanceThreshold (0.05); //inlier
+  seg.setDistanceThreshold (0.02); //inlier
   seg.setRadiusLimits (0, 0.1);   //maximalny rozmer telesa
   seg.setInputCloud (cloud_filtered2);
   seg.setInputNormals (cloud_normals2);
@@ -142,7 +144,7 @@ main (int argc, char** argv)
   else
   {
 	  std::cerr << "PointCloud representing the cylindrical component: " << cloud_cylinder->size () << " data points." << std::endl;
-	  writer.write ("table_scene_mug_stereo_textured_cylinder.pcd", *cloud_cylinder, false);
+	  writer.write ("cylinder.pcd", *cloud_cylinder, false);
   }
   return (0);
 }

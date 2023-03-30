@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cylinder.dir/cylinder.cpp.o"
+  "CMakeFiles/cylinder.dir/cylinder.cpp.o.d"
   "cylinder"
   "cylinder.pdb"
 )

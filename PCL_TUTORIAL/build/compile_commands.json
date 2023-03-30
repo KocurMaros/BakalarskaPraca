@@ -1,22 +1,32 @@
 [
 {
-  "directory": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build",
-  "command": "/usr/bin/c++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2      -o CMakeFiles/sphere.dir/sphere.cpp.o -c /home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/sphere.cpp",
-  "file": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/sphere.cpp"
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/cylinder.dir/cylinder.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/cylinder.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/cylinder.cpp"
 },
 {
-  "directory": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build",
-  "command": "/usr/bin/c++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2      -o CMakeFiles/example.dir/example.cpp.o -c /home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/example.cpp",
-  "file": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/example.cpp"
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/transform.dir/matrix_transform.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/matrix_transform.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/matrix_transform.cpp"
 },
 {
-  "directory": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build",
-  "command": "/usr/bin/c++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2      -o CMakeFiles/make_pcd.dir/save_to_pcd.cpp.o -c /home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/save_to_pcd.cpp",
-  "file": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/save_to_pcd.cpp"
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/make_pcd.dir/save_to_pcd.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/save_to_pcd.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/save_to_pcd.cpp"
 },
 {
-  "directory": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/build",
-  "command": "/usr/bin/c++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2      -o CMakeFiles/cylinder.dir/cylinder.cpp.o -c /home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/cylinder.cpp",
-  "file": "/home/laptop/school/BakalarskaPraca/PCL_TUTORIAL/cylinder.cpp"
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/sphere.dir/sphere.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/sphere.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/sphere.cpp"
+},
+{
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/concatenate.dir/concatenate_clouds.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/concatenate_clouds.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/concatenate_clouds.cpp"
+},
+{
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/alignment.dir/alignment.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/alignment.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/alignment.cpp"
 }
 ]

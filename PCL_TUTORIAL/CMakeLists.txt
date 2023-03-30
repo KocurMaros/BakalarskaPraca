@@ -14,14 +14,16 @@ add_definitions(${PCL_DEFINITIONS})
 
 
 add_executable(cylinder cylinder.cpp)
-#add_executable(make_pcd save_to_pcd.cpp)
+add_executable(transform matrix_transform.cpp)
+add_executable(make_pcd save_to_pcd.cpp)
 # add_executable(example example.cpp)
 add_executable(sphere sphere.cpp)
 add_executable(concatenate concatenate_clouds.cpp)
 add_executable(alignment alignment.cpp)
 
 target_link_libraries(cylinder ${PCL_LIBRARIES} ${Boost_LIBRARIES})
-#target_link_libraries(make_pcd ${PCL_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(transform ${PCL_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(make_pcd ${PCL_LIBRARIES} ${Boost_LIBRARIES})
 # target_link_libraries(example ${PCL_LIBRARIES} ${Boost_LIBRARIES})
 target_link_libraries(sphere ${PCL_LIBRARIES} ${Boost_LIBRARIES})
 target_link_libraries(concatenate ${PCL_LIBRARIES} ${Boost_LIBRARIES})

@@ -233,20 +233,20 @@ main (int argc, char **argv)
 
   // Load the object templates specified in the object_templates.txt file
   std::vector<FeatureCloud> object_templates;
-  // std::ifstream input_stream (argv[1]);
+  std::ifstream input_stream (argv[1]);
   object_templates.resize (0);
-  // std::string pcd_filename;
-  // while (input_stream.good ())
-  // {
-  //   std::getline (input_stream, pcd_filename);
-  //   if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
-  //     continue;
+  std::string pcd_filename;
+  while (input_stream.good ())
+  {
+    std::getline (input_stream, pcd_filename);
+    if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
+      continue;
 
-  // }
-  // input_stream.close ();
+  }
+  input_stream.close ();
 
   FeatureCloud template_cloud;
-  template_cloud.loadInputCloud ("../pcd/table_scene_mug_stereo_textured_cylinder.pcd");
+  template_cloud.loadInputCloud ("table_scene_mug_stereo_textured_cylinder.pcd");
   object_templates.push_back (template_cloud);
   // Load the target cloud PCD file
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);

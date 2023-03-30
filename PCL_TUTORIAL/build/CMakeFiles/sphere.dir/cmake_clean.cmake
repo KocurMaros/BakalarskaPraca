@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sphere.dir/sphere.cpp.o"
+  "CMakeFiles/sphere.dir/sphere.cpp.o.d"
   "sphere"
   "sphere.pdb"
 )
