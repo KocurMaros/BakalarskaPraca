@@ -4,5 +4,6 @@
 /home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/sphere.dir
 /home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/concatenate.dir
 /home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/alignment.dir
+/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/ply.dir
 /home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/edit_cache.dir
 /home/laptop/BakalarskaPraca/PCL_TUTORIAL/build/CMakeFiles/rebuild_cache.dir

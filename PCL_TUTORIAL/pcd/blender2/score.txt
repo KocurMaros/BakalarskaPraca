@@ -1,0 +1,19 @@
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment base
+Best fitness score: 0.000034
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment x1
+Best fitness score: 0.000031
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment x1y1
+Best fitness score: 0.000045
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment x1y-1
+Best fitness score: 0.000039
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment x-1
+Best fitness score: 0.000040
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment x-1y1
+Best fitness score: 0.000045
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment x-1y-1
+Best fitness score: 0.000041
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment y1
+Best fitness score: 0.000034
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./alignment y-1
+Best fitness score: 0.000030
+

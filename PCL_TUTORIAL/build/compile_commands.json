@@ -28,5 +28,10 @@
   "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
   "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/alignment.dir/alignment.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/alignment.cpp",
   "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/alignment.cpp"
+},
+{
+  "directory": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -isystem /usr/local/include/vtk-8.1 -isystem /usr/local/include/pcl-1.13 -isystem /usr/include/eigen3 -isystem /usr/include/openni2 -msse4.2 -mfpmath=sse -march=native -mavx2 -o CMakeFiles/ply.dir/ply_view.cpp.o -c /home/laptop/BakalarskaPraca/PCL_TUTORIAL/ply_view.cpp",
+  "file": "/home/laptop/BakalarskaPraca/PCL_TUTORIAL/ply_view.cpp"
 }
 ]

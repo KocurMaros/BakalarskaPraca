@@ -1,5 +1,7 @@
+////////////////
 #include <limits>
 #include <fstream>
+#include <string>
 #include <vector>
 #include <Eigen/Core>
 #include <pcl/memory.h>
@@ -13,7 +15,7 @@
 #include <pcl/features/normal_3d.h>
 #include <pcl/features/fpfh.h>
 #include <pcl/registration/ia_ransac.h>
-
+////////////////
 class FeatureCloud
 {
   public:
@@ -130,9 +132,9 @@ class TemplateAlignment
     };
 
     TemplateAlignment () :
-      min_sample_distance_ (0.05f),
-      max_correspondence_distance_ (0.01f*0.01f),
-      nr_iterations_ (500)
+      min_sample_distance_ (0.001f),
+      max_correspondence_distance_ (0.005f*0.005f),
+      nr_iterations_ (1000)
     {
       // Initialize the parameters in the Sample Consensus Initial Alignment (SAC-IA) algorithm
       sac_ia_.setMinSampleDistance (min_sample_distance_);
@@ -225,7 +227,9 @@ class TemplateAlignment
 int
 main (int argc, char **argv)
 {
-  // if (argc < 3)
+  std::string name = argv[1];
+
+    // if (argc < 3)
   // {
   //   printf ("No target PCD file given!\n");
   //   return (-1);
@@ -233,25 +237,27 @@ main (int argc, char **argv)
 
   // Load the object templates specified in the object_templates.txt file
   std::vector<FeatureCloud> object_templates;
-  std::ifstream input_stream (argv[1]);
   object_templates.resize (0);
-  std::string pcd_filename;
-  while (input_stream.good ())
-  {
-    std::getline (input_stream, pcd_filename);
-    if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
-      continue;
+  // std::ifstream input_stream (argv[1]);
+  // std::string pcd_filename;
+  // while (input_stream.good ())
+  // {
+  //   std::getline (input_stream, pcd_filename);
+  //   if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
+  //     continue;
 
-  }
-  input_stream.close ();
+  // }
+  // input_stream.close ();
 
   FeatureCloud template_cloud;
-  template_cloud.loadInputCloud ("table_scene_mug_stereo_textured_cylinder.pcd");
+  std::string input_cylinder = "../pcd/blender2/cylinders/"+name+"_cylinder.pcd";
+  std::string input_pcd = "../pcd/blender2/pcds/"+name+".pcd";
+  template_cloud.loadInputCloud (input_cylinder);
   object_templates.push_back (template_cloud);
   // Load the target cloud PCD file
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
-  pcl::io::loadPCDFile ("../pcd/mug.pcd", *cloud);
-
+  pcl::io::loadPCDFile (input_pcd, *cloud);
+  
   // Preprocess the cloud by...
   // ...removing distant points
   const float depth_limit = 1.0;
@@ -294,18 +300,26 @@ main (int argc, char **argv)
   // Print the rotation matrix and translation vector
   Eigen::Matrix3f rotation = best_alignment.final_transformation.block<3,3>(0, 0);
   Eigen::Vector3f translation = best_alignment.final_transformation.block<3,1>(0, 3);
-
-  printf ("\n");
-  printf ("    | %6.3f %6.3f %6.3f | \n", rotation (0,0), rotation (0,1), rotation (0,2));
-  printf ("R = | %6.3f %6.3f %6.3f | \n", rotation (1,0), rotation (1,1), rotation (1,2));
-  printf ("    | %6.3f %6.3f %6.3f | \n", rotation (2,0), rotation (2,1), rotation (2,2));
-  printf ("\n");
-  printf ("t = < %0.3f, %0.3f, %0.3f >\n", translation (0), translation (1), translation (2));
+  FILE *my_file;
+  my_file = fopen("../pcd/blender2/matrixies2.txt","a");
+  // std::string trans = "translation" + name;
+  // my_file << name << std::endl
+  char *cstr = new char[name.length() + 1];
+  strcpy(cstr, name.c_str());
+  // do stuff
+  fprintf (my_file, "%s \n",cstr);
+  delete [] cstr;
+  fprintf (my_file, "R = [ %6.3f %6.3f %6.3f ; \n", rotation (0,0), rotation (0,1), rotation (0,2));
+  fprintf (my_file, "      %6.3f %6.3f %6.3f ; \n", rotation (1,0), rotation (1,1), rotation (1,2));
+  fprintf (my_file, "      %6.3f %6.3f %6.3f ]; \n", rotation (2,0), rotation (2,1), rotation (2,2));
+  fprintf (my_file, "\n");
+  fprintf (my_file, "t = [ %0.3f, %0.3f, %0.3f ];\n", translation (0), translation (1), translation (2));
 
   // Save the aligned template for visualization
   pcl::PointCloud<pcl::PointXYZ> transformed_cloud;
   pcl::transformPointCloud (*best_template.getPointCloud (), transformed_cloud, best_alignment.final_transformation);
-  pcl::io::savePCDFileBinary ("output.pcd", transformed_cloud);
+  std::string alignment_pcd = "../pcd/blender2/alignments/" + name + "_alignment.pcd";
+  pcl::io::savePCDFileBinary (alignment_pcd, transformed_cloud);
 
   return (0);
 }

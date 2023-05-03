@@ -171,4 +171,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sphere.dir/DependInfo.cmake"
   "CMakeFiles/concatenate.dir/DependInfo.cmake"
   "CMakeFiles/alignment.dir/DependInfo.cmake"
+  "CMakeFiles/ply.dir/DependInfo.cmake"
   )

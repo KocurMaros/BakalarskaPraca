@@ -194,6 +194,19 @@ alignment/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/alignment.dir/build.make CMakeFiles/alignment.dir/build
 .PHONY : alignment/fast
 
+#=============================================================================
+# Target rules for targets named ply
+
+# Build rule for target.
+ply: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ply
+.PHONY : ply
+
+# fast build rule for target.
+ply/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ply.dir/build.make CMakeFiles/ply.dir/build
+.PHONY : ply/fast
+
 alignment.o: alignment.cpp.o
 .PHONY : alignment.o
 
@@ -290,6 +303,30 @@ matrix_transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/matrix_transform.cpp.s
 .PHONY : matrix_transform.cpp.s
 
+ply_view.o: ply_view.cpp.o
+.PHONY : ply_view.o
+
+# target to build an object file
+ply_view.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ply.dir/build.make CMakeFiles/ply.dir/ply_view.cpp.o
+.PHONY : ply_view.cpp.o
+
+ply_view.i: ply_view.cpp.i
+.PHONY : ply_view.i
+
+# target to preprocess a source file
+ply_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ply.dir/build.make CMakeFiles/ply.dir/ply_view.cpp.i
+.PHONY : ply_view.cpp.i
+
+ply_view.s: ply_view.cpp.s
+.PHONY : ply_view.s
+
+# target to generate assembly for a file
+ply_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ply.dir/build.make CMakeFiles/ply.dir/ply_view.cpp.s
+.PHONY : ply_view.cpp.s
+
 save_to_pcd.o: save_to_pcd.cpp.o
 .PHONY : save_to_pcd.o
 
@@ -350,6 +387,7 @@ help:
 	@echo "... concatenate"
 	@echo "... cylinder"
 	@echo "... make_pcd"
+	@echo "... ply"
 	@echo "... sphere"
 	@echo "... transform"
 	@echo "... alignment.o"
@@ -364,6 +402,9 @@ help:
 	@echo "... matrix_transform.o"
 	@echo "... matrix_transform.i"
 	@echo "... matrix_transform.s"
+	@echo "... ply_view.o"
+	@echo "... ply_view.i"
+	@echo "... ply_view.s"
 	@echo "... save_to_pcd.o"
 	@echo "... save_to_pcd.i"
 	@echo "... save_to_pcd.s"
