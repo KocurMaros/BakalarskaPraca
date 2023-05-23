@@ -129,9 +129,13 @@ class TemplateAlignment
       float fitness_score;
       Eigen::Matrix4f final_transformation;
       PCL_MAKE_ALIGNED_OPERATOR_NEW
+      PCL_MAKE_ALIGNED_OPERATOR_NEW
     };
 
     TemplateAlignment () :
+      min_sample_distance_ (0.001f),
+      max_correspondence_distance_ (0.005f*0.005f),
+      nr_iterations_ (1000)
       min_sample_distance_ (0.001f),
       max_correspondence_distance_ (0.005f*0.005f),
       nr_iterations_ (1000)
@@ -165,6 +169,7 @@ class TemplateAlignment
     align (FeatureCloud &template_cloud, TemplateAlignment::Result &result)
     {
       sac_ia_.setInputSource (template_cloud.getPointCloud ());
+      sac_ia_.setInputSource (template_cloud.getPointCloud ());
       sac_ia_.setSourceFeatures (template_cloud.getLocalFeatures ());
 
       pcl::PointCloud<pcl::PointXYZ> registration_output;
@@ -179,6 +184,7 @@ class TemplateAlignment
     alignAll (std::vector<TemplateAlignment::Result, Eigen::aligned_allocator<Result> > &results)
     {
       results.resize (templates_.size ());
+      for (std::size_t i = 0; i < templates_.size (); ++i)
       for (std::size_t i = 0; i < templates_.size (); ++i)
       {
         align (templates_[i], results[i]);
@@ -196,6 +202,7 @@ class TemplateAlignment
       // Find the template with the best (lowest) fitness score
       float lowest_score = std::numeric_limits<float>::infinity ();
       int best_template = 0;
+      for (std::size_t i = 0; i < results.size (); ++i)
       for (std::size_t i = 0; i < results.size (); ++i)
       {
         const Result &r = results[i];
@@ -234,10 +241,24 @@ main (int argc, char **argv)
   //   printf ("No target PCD file given!\n");
   //   return (-1);
   // }
+  std::string name = argv[1];
+
+    // if (argc < 3)
+  // {
+  //   printf ("No target PCD file given!\n");
+  //   return (-1);
+  // }
 
   // Load the object templates specified in the object_templates.txt file
   std::vector<FeatureCloud> object_templates;
   object_templates.resize (0);
+  // std::ifstream input_stream (argv[1]);
+  // std::string pcd_filename;
+  // while (input_stream.good ())
+  // {
+  //   std::getline (input_stream, pcd_filename);
+  //   if (pcd_filename.empty () || pcd_filename.at (0) == '#') // Skip blank lines or comments
+  //     continue;
   // std::ifstream input_stream (argv[1]);
   // std::string pcd_filename;
   // while (input_stream.good ())
@@ -250,8 +271,8 @@ main (int argc, char **argv)
   // input_stream.close ();
 
   FeatureCloud template_cloud;
-  std::string input_cylinder = "../pcd/blender2/cylinders/"+name+"_cylinder.pcd";
-  std::string input_pcd = "../pcd/blender2/pcds/"+name+".pcd";
+  std::string input_cylinder = "../pcd/blender3/cylinders/"+name+"_cylinder.pcd";
+  std::string input_pcd = "../pcd/blender3/pcds/"+name+".pcd";
   template_cloud.loadInputCloud (input_cylinder);
   object_templates.push_back (template_cloud);
   // Load the target cloud PCD file
@@ -284,6 +305,7 @@ main (int argc, char **argv)
   // Set the TemplateAlignment inputs
   TemplateAlignment template_align;
   for (std::size_t i = 0; i < object_templates.size (); ++i)
+  for (std::size_t i = 0; i < object_templates.size (); ++i)
   {
     template_align.addTemplateCloud (object_templates[i]);
   }
@@ -301,7 +323,7 @@ main (int argc, char **argv)
   Eigen::Matrix3f rotation = best_alignment.final_transformation.block<3,3>(0, 0);
   Eigen::Vector3f translation = best_alignment.final_transformation.block<3,1>(0, 3);
   FILE *my_file;
-  my_file = fopen("../pcd/blender2/matrixies2.txt","a");
+  my_file = fopen("../pcd/blender3/matrixies2.txt","a");
   // std::string trans = "translation" + name;
   // my_file << name << std::endl
   char *cstr = new char[name.length() + 1];
@@ -318,7 +340,7 @@ main (int argc, char **argv)
   // Save the aligned template for visualization
   pcl::PointCloud<pcl::PointXYZ> transformed_cloud;
   pcl::transformPointCloud (*best_template.getPointCloud (), transformed_cloud, best_alignment.final_transformation);
-  std::string alignment_pcd = "../pcd/blender2/alignments/" + name + "_alignment.pcd";
+  std::string alignment_pcd = "../pcd/blender3/alignments/" + name + "_alignment.pcd";
   pcl::io::savePCDFileBinary (alignment_pcd, transformed_cloud);
 
   return (0);

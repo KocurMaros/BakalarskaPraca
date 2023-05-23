@@ -13,6 +13,7 @@
 #include <thread>
 #include <chrono>
 #include <string>
+#include <string>
 using namespace std::chrono_literals;
 typedef pcl::PointXYZ PointT;
 pcl::visualization::PCLVisualizer::Ptr
@@ -33,6 +34,7 @@ simpleVis (pcl::PointCloud<pcl::PointXYZ>::ConstPtr cloud)
 int
 main (int argc, char** argv)
 {
+  std::string name = argv[1];
   std::string name = argv[1];
   // All the objects needed  
   pcl::visualization::PCLVisualizer::Ptr viewer;
@@ -57,7 +59,8 @@ main (int argc, char** argv)
 
   // Read in the cloud data
   // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
-  std::string input_pcd = "../pcd/blender2/pcds/" + name + ".pcd";
+  std::string input_pcd = "../pcd/blender3/pcds/" + name + ".pcd";
+
   reader.read (input_pcd, *cloud);
 
   // reader.read ("../pcd/kinect_pcd1.pcd", *cloud);
@@ -69,6 +72,7 @@ main (int argc, char** argv)
   // Build a passthrough filter to remove spurious NaNs
   pass.setInputCloud (cloud);
   pass.setFilterFieldName ("z");
+  pass.setFilterLimits (0, 3); //filtrovanie dat od 1.5 metra dalej
   pass.setFilterLimits (0, 3); //filtrovanie dat od 1.5 metra dalej
   pass.filter (*cloud_filtered);
   std::cerr << "PointCloud after filtering has: " << cloud_filtered->size () << " data points." << std::endl;
@@ -82,6 +86,8 @@ main (int argc, char** argv)
   // viewer->spin();
   // Create the segmentation object for the planar model and set all the parameters
   seg.setOptimizeCoefficients (true);
+  seg.setModelType (pcl::SACMODEL_NORMAL_PLANE); 
+
   seg.setModelType (pcl::SACMODEL_NORMAL_PLANE); 
 
   seg.setNormalDistanceWeight (0.1);    //surface normals influence
@@ -102,7 +108,8 @@ main (int argc, char** argv)
   pcl::PointCloud<PointT>::Ptr cloud_plane (new pcl::PointCloud<PointT> ());
   extract.filter (*cloud_plane);
   std::cerr << "PointCloud representing the planar component: " << cloud_plane->size () << " data points." << std::endl;
-  std::string out_plane = "../pcd/blender2/planes/" + name + "_plane.pcd";
+
+  std::string out_plane = "../pcd/blender3/planes/" + name + "_plane.pcd";
   writer.write (out_plane, *cloud_plane, false);
 
   // Remove the planar inliers, extract the rest
@@ -119,7 +126,10 @@ main (int argc, char** argv)
   seg.setModelType (pcl::SACMODEL_CYLINDER);    //teleso SACMODEL_CYLINDER  //SACMODEL_SPHERE 
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setNormalDistanceWeight (0.15); //surface normals influence
+  seg.setNormalDistanceWeight (0.15); //surface normals influence
   seg.setMaxIterations (10000);
+  seg.setDistanceThreshold (0.5); //inlier
+  seg.setRadiusLimits (0.001, 3);   //maximalny rozmer telesa
   seg.setDistanceThreshold (0.5); //inlier
   seg.setRadiusLimits (0.001, 3);   //maximalny rozmer telesa
   seg.setInputCloud (cloud_filtered2);
@@ -147,7 +157,9 @@ main (int argc, char** argv)
   else
   {
 	  std::cerr << "PointCloud representing the cylindrical component: " << cloud_cylinder->size () << " data points." << std::endl;
-    std::string out_cylinder = "../pcd/blender2/cylinders/" + name + "_cylinder.pcd";
+
+    std::string out_cylinder = "../pcd/blender3/cylinders/" + name + "_cylinder.pcd";
+
 	  writer.write (out_cylinder, *cloud_cylinder, false);
   }
   return (0);

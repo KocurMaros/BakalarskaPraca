@@ -1,0 +1,288 @@
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder base
+PointCloud has: 10296 data points.
+PointCloud after filtering has: 10056 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -0.0112846
+  values[1]:   -0.007763
+  values[2]:   0.999906
+  values[3]:   -0.055269
+
+PointCloud representing the planar component: 4984 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -0.0148987
+  values[1]:   -0.0412705
+  values[2]:   -1.57935
+  values[3]:   0.00672854
+  values[4]:   0.0206292
+  values[5]:   0.999765
+  values[6]:   0.196947
+
+PointCloud representing the cylindrical component: 1393 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x-1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00804009
+  values[1]:   -0.00757451
+  values[2]:   0.999939
+  values[3]:   -0.039892
+
+PointCloud representing the planar component: 4855 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -0.982722
+  values[1]:   0.0255377
+  values[2]:   0.406529
+  values[3]:   -0.052381
+  values[4]:   -0.0838544
+  values[5]:   -0.9951
+  values[6]:   0.189954
+
+PointCloud representing the cylindrical component: 427 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x-1y-1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00766286
+  values[1]:   -0.00793477
+  values[2]:   0.999939
+  values[3]:   -0.0388075
+
+PointCloud representing the planar component: 5062 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -3.49516
+  values[1]:   -4.12037
+  values[2]:   0.251358
+  values[3]:   0.0217695
+  values[4]:   0.99976
+  values[5]:   -0.00233378
+  values[6]:   0.252647
+
+PointCloud representing the cylindrical component: 123 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x-1y1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00803778
+  values[1]:   -0.00751254
+  values[2]:   0.999939
+  values[3]:   -0.0398892
+
+PointCloud representing the planar component: 4849 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -0.0286316
+  values[1]:   2.89496
+  values[2]:   -12.4574
+  values[3]:   0.0761711
+  values[4]:   0.148679
+  values[5]:   -0.985948
+  values[6]:   0.194275
+
+PointCloud representing the cylindrical component: 416 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x-1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00804009
+  values[1]:   -0.00757451
+  values[2]:   0.999939
+  values[3]:   -0.039892
+
+PointCloud representing the planar component: 4855 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -0.982722
+  values[1]:   0.0255377
+  values[2]:   0.406529
+  values[3]:   -0.052381
+  values[4]:   -0.0838544
+  values[5]:   -0.9951
+  values[6]:   0.189954
+
+PointCloud representing the cylindrical component: 427 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00828801
+  values[1]:   -0.00757477
+  values[2]:   0.999937
+  values[3]:   -0.0393362
+
+PointCloud representing the planar component: 5023 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   1.06885
+  values[1]:   -0.0562654
+  values[2]:   1.28423
+  values[3]:   0.054799
+  values[4]:   -0.0458198
+  values[5]:   0.997446
+  values[6]:   0.175361
+
+PointCloud representing the cylindrical component: 381 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x1y-1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00828145
+  values[1]:   -0.00782872
+  values[2]:   0.999935
+  values[3]:   -0.0393566
+
+PointCloud representing the planar component: 5065 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.881094
+  values[1]:   -1.10151
+  values[2]:   1.97517
+  values[3]:   -0.066098
+  values[4]:   -0.0549939
+  values[5]:   0.996297
+  values[6]:   0.182418
+
+PointCloud representing the cylindrical component: 489 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00828801
+  values[1]:   -0.00757477
+  values[2]:   0.999937
+  values[3]:   -0.0393362
+
+PointCloud representing the planar component: 5023 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   1.06885
+  values[1]:   -0.0562654
+  values[2]:   1.28423
+  values[3]:   0.054799
+  values[4]:   -0.0458198
+  values[5]:   0.997446
+  values[6]:   0.175361
+
+PointCloud representing the cylindrical component: 381 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x1y-1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00828145
+  values[1]:   -0.00782872
+  values[2]:   0.999935
+  values[3]:   -0.0393566
+
+PointCloud representing the planar component: 5065 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.881094
+  values[1]:   -1.10151
+  values[2]:   1.97517
+  values[3]:   -0.066098
+  values[4]:   -0.0549939
+  values[5]:   0.996297
+  values[6]:   0.182418
+
+PointCloud representing the cylindrical component: 489 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder x1y1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00829477
+  values[1]:   -0.00727424
+  values[2]:   0.999939
+  values[3]:   -0.0392449
+
+PointCloud representing the planar component: 4841 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   1.41662
+  values[1]:   1.99237
+  values[2]:   -15.9813
+  values[3]:   0.0260333
+  values[4]:   0.0612624
+  values[5]:   -0.997782
+  values[6]:   0.179018
+
+PointCloud representing the cylindrical component: 452 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder y-1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00798172
+  values[1]:   -0.00799681
+  values[2]:   0.999936
+  values[3]:   -0.0387066
+
+PointCloud representing the planar component: 5041 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   -0.506363
+  values[1]:   -1.12182
+  values[2]:   2.55478
+  values[3]:   0.208489
+  values[4]:   0.0513813
+  values[5]:   -0.976674
+  values[6]:   0.211879
+
+PointCloud representing the cylindrical component: 439 data points.
+laptop@laptop-Vostro-15-7510:~/BakalarskaPraca/PCL_TUTORIAL/build$ ./cylinder y1
+PointCloud has: 8348 data points.
+PointCloud after filtering has: 8108 data points.
+Plane coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   0.00804887
+  values[1]:   -0.00734781
+  values[2]:   0.999941
+  values[3]:   -0.0393727
+
+PointCloud representing the planar component: 4831 data points.
+Cylinder coefficients: header: 
+seq: 0 stamp: 0 frame_id: 
+values[]
+  values[0]:   1.37601
+  values[1]:   2.55992
+  values[2]:   -0.419857
+  values[3]:   -0.669131
+  values[4]:   -0.743145
+  values[5]:   -9.67173e-09
+  values[6]:   0.439146
+
+PointCloud representing the cylindrical component: 299 data points.
