@@ -48,6 +48,9 @@ function visualizeCylinder(x, y, z, radius, axs, color)
     surf(X, Y, Z, 'FaceColor', color, 'EdgeColor', 'none');
     axis equal;
     view(3);
+    xlim([-120 120]);
+    ylim([-120 120]);
+    zlim([-120 120]);
     xlabel('X');
     ylabel('Y');
     zlabel('Z');    title('Cylinder Visualization');
