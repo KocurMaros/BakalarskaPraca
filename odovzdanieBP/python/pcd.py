@@ -1,10 +1,4 @@
-"""
-Capture a single RGB and depth frame and save them to output.pcd in
-the libpcl PCD format. View the resulting cloud with:
 
-    pcl_viewer output.pcd
-
-"""
 from freenect2 import Device, FrameType
 import numpy as np
 
@@ -27,5 +21,5 @@ rgb.to_image().save('output_rgb.png')
 with open('output.pcd', 'wb') as fobj:
     device.registration.write_pcd(fobj, undistorted, registered)
 
-with open('output_big.pcd', 'wb') as fobj:
+with open('output_big_res.pcd', 'wb') as fobj:
    device.registration.write_big_pcd(fobj, big_depth, rgb)

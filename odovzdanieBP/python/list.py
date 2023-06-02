@@ -26,6 +26,3 @@ file.visititems(print_attrs)
 file.close()
 
 
-# data h5/bushinghl_HL-48-28.h5 rovnaky ako je moj base1.h5 rovnaka struktura 
-
-

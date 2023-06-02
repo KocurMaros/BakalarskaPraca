@@ -56,16 +56,11 @@ main (int argc, char** argv)
   pcl::ModelCoefficients::Ptr coefficients_plane (new pcl::ModelCoefficients), coefficients_cylinder (new pcl::ModelCoefficients);
   pcl::PointIndices::Ptr inliers_plane (new pcl::PointIndices), inliers_cylinder (new pcl::PointIndices);
 
-  // Read in the cloud data
-  // reader.read ("/home/laptop/school/BK/freenect2-test/output_big.pcd", *cloud);
+ 
   std::string input_pcd = "export_diff_rad/pcds/" + name + ".pcd";
 
   reader.read (input_pcd, *cloud);
 
-  // reader.read ("../pcd/kinect_pcd1.pcd", *cloud);
-  // reader.read ("/home/laptop/BakalarskaPraca/data/segmentation/mOSD/learn/learn40.pcd", *cloud);
-  // viewer = simpleVis(cloud);
-  // viewer->spin();
 
   std::cerr << "PointCloud has: " << cloud->size () << " data points." << std::endl;
   // Build a passthrough filter to remove spurious NaNs
@@ -117,9 +112,7 @@ main (int argc, char** argv)
   extract_normals.setInputCloud (cloud_normals);
   extract_normals.setIndices (inliers_plane);
   extract_normals.filter (*cloud_normals2);
-  // viewer = simpleVis(cloud_filtered2);
-  // viewer->spin();
-  // Create the segmentation object for cylinder segmentation and set all the parameters
+  
   seg.setOptimizeCoefficients (true);
   seg.setModelType (pcl::SACMODEL_CYLINDER);    //teleso SACMODEL_CYLINDER  //SACMODEL_SPHERE 
   seg.setMethodType (pcl::SAC_RANSAC);
